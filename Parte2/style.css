@@ -1,0 +1,101 @@
+h1{
+    display: flex;
+    justify-content: center;
+}
+h2{
+    display: flex;
+    justify-content: center;
+}
+.static {position: relative;
+    position: static;
+    background-color: lightblue;
+    padding: 20px;
+    border: 2px solid blue;
+    margin: 20px auto;
+    text-align: center;
+}
+.relative{
+    
+    position: relative;
+    left: 70px;
+    right: 70px;
+    top: 20px;
+    background-color: lightblue;
+    padding: 20px;
+    border: 2px solid blue;
+    margin: 20px 700px;
+    text-align: center;
+}
+.absolute{
+    position: absolute;
+    top: 1500px;
+    left: 20px;
+    background-color: lightblue;
+    padding: 20px;
+    border: 2px solid blue;
+    margin: 20px 700px;
+    text-align: center;
+}
+.fixed{
+     position: fixed;
+   top: 0;
+    background-color: aquamarine;
+    padding: px;
+    border: 2px solid blue;
+    margin: 20px 700px;
+    text-align: center
+
+}
+.container {
+  width: 100%;
+  top: 700px;
+}
+
+.box {
+  width: 30%;
+  float: left;
+  margin: 10px;
+  padding: 20px;
+  background-color: lightgray;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.display {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    display: inline-block;
+    margin: 5px;
+  }
+ .desvor {
+    width: 200px;
+    height: 100px;
+    border: 1px solid black;
+    overflow: auto;
+  }
+  .box1 {
+  position: absolute;
+  top: 1100px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  z-index: 10;
+}
+
+.box2 {
+  position: absolute;
+  top: 1110px;
+  left: 70px;
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  z-index: 5;
+}
+
+
+

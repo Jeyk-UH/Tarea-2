@@ -1,11 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Parte2</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <header>
+        <h1>Parte 2.2 </h1>
+    </header>
+
+    <h2>Float y Clear</h2>
+    <div class="container">
+        <div class="box">Columna 1</div>
+        <div class="box">Columna 2</div>
+        <div class="box">Columna 3</div>
+        <div class="clearfix"></div>
+    </div>
+
+    <h2>Display</h2>
+    <p> block: Hace que el elemento ocupe todo el ancho disponible y se coloque en una nueva línea <br>
+        inline: Permite que el elemento se mantenga en la misma línea que otros elementos sin aceptar propiedades de
+        ancho y alto. <br>
+        inline-block: similar a inline pero permite definir ancho y alto
+    <h3>Ejemplo práctico usando inlie-block </h3>
+    </p>
+    <div class="display">Caja 1</div>
+    <div class="display">Caja 2</div>
+    <div class="display">Caja 3</div>
+
+    <h2>Overflow</h2>
+    <p>
+        visible: El contenido que excede el contenedor sigue siendo visible. <br>
+        hidden: Oculta el contenido que se desborda sin permitir desplazamiento <br>
+        scroll: Agrega barras de desplazamiento siempre, incluso si el contenido no se desborda <br>
+        auto: Agrega barras de desplazamiento solo si el contenido se desborda
+    </p>
+    <h3>Ejemplo práctico con desbordamiento</h3>
+    <div class="desvor">
+        Este es un texto largo que sobrepasa el tamaño del contenedor. Si el contenido es mayor, aparecerán barras de
+        desplazamiento automáticamente.
+    </div>
+
+    <h2>Visibility</h2>
+    <p>
+        visible: (por defecto): El elemento se muestra normalmente. <br>
+        hidden: Oculta el elemento sin eliminar su espacio en el diseño. <br>
+        collapse: Se aplica a filas y columnas de tablas, eliminando su espacio
+
+    </p>
+
+    <h3> Ejemplo con hidden (el parrafo esta oculto) </h3>
+    <p class="mensaje">Este mensaje está oculto pero sigue ocupando espacio.</p>
+
+    <h2>Z-index</h2>
+    <p>En CSS controla el orden de apilamiento de los elementos en una página web. Es especialmente útil cuando varios
+        elementos se superponen y necesitas definir cuál debe estar encima
+        <br>
+        Se aplicara en el sigueinte caso
+    </p>
+    <div class="box1">Caja Roja</div>
+    <div class="box2">Caja Azul</div>
+
+
+
+    <h2>Elemento Position</h2>
+    <div class="static">Static
+        <p>Los elemenos con position static se colocan segun el flujo normal del documento</p>
+    </div>
+
+
+    <div class="relative"> Relative
+        <p>El elemento se posiciona en relación con su ubicación original. Puedes modificarlo con top, left ...</p>
+    </div>
+
+    <div class=" absolute"> Absolute
+        <p>El elemento se posiciona en relación con su contenedor padre con si no hay ninguno, respecto a la ventana del
+            navegador</p>
+    </div>
+
+    <div class="fixed"> Fixed
+        <p>El elemento se fija en la pantalla, sin importar el desplazamiento de la página</p>
+    </div>
+
+
+
+
 </body>
+
 </html>
